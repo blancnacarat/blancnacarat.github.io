@@ -6,9 +6,9 @@ image: assets/images/PdP.jpg
 nav-menu: false
 ---
 
-<ul>
+
 Nous sommes un jeune label indépendant pour photographes, vidéastes, et musiciens. Blanc Nacarat se veut une structure polyvalente accueillant des musiciens dans le champ de la musique électronique mais également des artistes travaillant sur d’autres supports afin de proposer une offre culturelle jeune et variée tout en croisant plusieurs disciplines artistiques.
-</ul>
+
 
 
 <!--
