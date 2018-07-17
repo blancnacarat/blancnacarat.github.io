@@ -3,7 +3,7 @@ layout: post
 title: Présentation
 description: Lorem ipsum dolor est
 image: assets/images/PdP.jpg
-nav-menu: true
+nav-menu: false
 ---
 
 <ul>
