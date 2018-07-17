@@ -1,0 +1,36 @@
+# site settings
+title: Folio
+subtitle: by Paul Nodet
+email: paul.nodet@gmail.com
+description: Quelques unes de mes photos <br> petit désordre.
+# baseurl:  # the subpath of your site, e.g. /blog
+# url: # the base hostname & protocol for your site
+author:
+street_address: 37 rue d'Authie
+city: Caen
+state: 
+zip_code: 14 0000
+country: France
+phone: (+33) 7 52 66 15 15
+
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 4
+
+# social settings
+500px_url:
+facebook_url: https://www.facebook.com/pnodet
+github_url:
+gitlab_url: 
+googleplus_url: 
+instagram_url: https://www.instagram.com/pnxdxt/
+linkedin_url: 
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/pnxdxt
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
