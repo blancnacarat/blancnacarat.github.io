@@ -2,7 +2,7 @@
 layout: allposts
 title: Photos
 landing-title: 'Toutes les photos'
-nav-menu: true
+nav-menu: false
 description: null
 image: null
 author: null
