@@ -47,7 +47,7 @@
 	}
 
 	strong, b {
-		color: _palette(fg-bold);
+		color: _palette(accent3);
 		font-weight: _font(weight-bold);
 	}
 
@@ -60,7 +60,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+		//color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
 		line-height: 1.65;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -73,26 +73,32 @@
 
 	h1 {
 		font-size: 2.5em;
+		color : _palette(accent3);
 	}
 
 	h2 {
 		font-size: 1.75em;
+		color: _palette(accent3);
 	}
 
 	h3 {
 		font-size: 1.35em;
+		color: _palette(fg-bold);
 	}
 
 	h4 {
 		font-size: 1.1em;
+		color: _palette(fg-bold);
 	}
 
 	h5 {
 		font-size: 0.9em;
+		color: _palette(fg-bold);
 	}
 
 	h6 {
 		font-size: 0.7em;
+		color: _palette(fg-bold);
 	}
 
 	@include breakpoint(small) {
