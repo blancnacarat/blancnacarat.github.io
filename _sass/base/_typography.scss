@@ -33,12 +33,12 @@
 			'border-bottom-color #{_duration(transition)} ease-in-out'
 		));
 		border-bottom: dotted 1px;
-		color: inherit;
+		color: _palette(accent5);
 		text-decoration: none;
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(highlight) !important;
+			color: _palette(accent3) !important;
 		}
 
 		&:active {
@@ -83,12 +83,12 @@
 
 	h3 {
 		font-size: 1.35em;
-		color: _palette(fg-bold);
+		color: _palette(accent5);
 	}
 
 	h4 {
 		font-size: 1.1em;
-		color: _palette(fg-bold);
+		color: _palette(accent5);
 	}
 
 	h5 {
