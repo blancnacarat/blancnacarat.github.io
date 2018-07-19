@@ -46,11 +46,13 @@
 		}
 	}
 
-	strong, b {
-		color: _palette(accent3);
+	strong {
+		color: _palette(accent5);
 		font-weight: _font(weight-bold);
 	}
-
+	b {
+		color: _palette(accent3);
+		ont-weight: _font(weight-bold);
 	em, i {
 		font-style: italic;
 	}
