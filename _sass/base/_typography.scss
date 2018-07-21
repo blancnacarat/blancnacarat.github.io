@@ -1,29 +1,21 @@
-///
-/// Forty by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
-/* Type */
-
-	body, input, select, textarea {
+body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(family);
-		font-size: 19pt;
+		font-size: 17pt;
 		font-weight: _font(weight);
 		letter-spacing: _font(letter-spacing);
 		line-height: 1.65;
 
 		@include breakpoint(xlarge) {
-			font-size: 16pt;
-		}
-
-		@include breakpoint(large) {
 			font-size: 14pt;
 		}
 
+		@include breakpoint(large) {
+			font-size: 12pt;
+		}
+
 		@include breakpoint(xxsmall) {
-			font-size: 13pt;
+			font-size: 11pt;
 		}
 	}
 
@@ -33,12 +25,12 @@
 			'border-bottom-color #{_duration(transition)} ease-in-out'
 		));
 		border-bottom: dotted 1px;
-		color: _palette(accent5);
+		color: inherit;
 		text-decoration: none;
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(accent3) !important;
+			color: _palette(highlight) !important;
 		}
 
 		&:active {
@@ -46,13 +38,11 @@
 		}
 	}
 
-	strong {
-		color: _palette(accent5);
+	strong, b {
+		color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
 	}
-	b {
-		color: _palette(accent3);
-		ont-weight: _font(weight-bold);
+
 	em, i {
 		font-style: italic;
 	}
@@ -62,7 +52,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		//color: _palette(fg-bold);
+		color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
 		line-height: 1.65;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -75,32 +65,26 @@
 
 	h1 {
 		font-size: 2.5em;
-		color : _palette(accent3);
 	}
 
 	h2 {
 		font-size: 1.75em;
-		color: _palette(accent3);
 	}
 
 	h3 {
 		font-size: 1.35em;
-		color: _palette(accent5);
 	}
 
 	h4 {
 		font-size: 1.1em;
-		color: _palette(accent5);
 	}
 
 	h5 {
 		font-size: 0.9em;
-		color: _palette(fg-bold);
 	}
 
 	h6 {
 		font-size: 0.7em;
-		color: _palette(fg-bold);
 	}
 
 	@include breakpoint(small) {
@@ -131,7 +115,7 @@
 
 	blockquote {
 		border-left: solid 4px _palette(border);
-		//font-style: italic;
+		font-style: italic;
 		margin: 0 0 _size(element-margin) 0;
 		padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
 	}
