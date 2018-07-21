@@ -9,7 +9,12 @@
 	#contact {
 		border-bottom: solid 1px _palette(border);
 		overflow-x: hidden;
+		
+		
+		color : _palette(bg-alt) !important;
 
+		
+		
 		> .inner {
 			@include vendor('display', 'flex');
 			padding: 0 !important;
