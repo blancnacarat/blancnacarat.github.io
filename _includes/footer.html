@@ -3,13 +3,17 @@
 	<div class="inner">
 		<section>
 			<form action="https://formspree.io/{{ site.email }}" method="POST">
+				<input type="hidden" name="_language" value="fr" />
+				<input type="hidden" name="_format" value="plain" />
+				<input type="hidden" name="_next" value="https://blancnacarat.github.io />
+				<input type="hidden" name="_subject" value="New submission!" />
 				<div class="field half first">
 					<label for="name">Nom</label>
 					<input type="text" name="name" id="name" />
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" />
+					<input type="text" name="_replyto" id="email" placeholder="myname@gmail.com" />
 				</div>
 				<div class="field">
 					<label for="message">Message</label>
