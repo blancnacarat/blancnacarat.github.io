@@ -90,7 +90,7 @@
 		//bleu #6AABE8
 		//violette #AEC0FF
 	*/
-	$palette: (
+	/* $palette: (
 		bg:				#FCD2E1,
 		bg-alt:				#F4A7A8,
 		fg:				#ffffff,
@@ -114,6 +114,29 @@
 		//dark red #FF0F53
 		//pink #F479A3
 	
+	*/
+	$palette: (
+		bg:				#f2f2f0,
+		bg-alt:				#f2e3d5,
+		fg:				#ffffff,
+		fg-bold:			#FF0F53,
+		fg-light:			#f2f2f0,
+		border:				#FF0F53,
+		border-bg:			#D87081,
+		highlight:			#F479A3,
+		
+		
+		accent1:			#f2f2f0, //cassé
+		accent2:			#f2e3d5, //beige
+		accent3:			#FF0F53, //dark red
+		accent4:			#D87081, //dark pink
+		accent5:			#F479A3, //pink
+		
+		//cassé #f2f2f0
+		//beige #f2e3d5
+		//dark pink #D87081
+		//dark red #FF0F53
+		//pink #F479A3
 	
 	/* $palette: (
 		bg:				#f2f2f0,
