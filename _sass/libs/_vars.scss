@@ -29,7 +29,7 @@
 	);
 
 // Palette.
-	$palette: (
+	/* $palette: (
 		bg:				#F6DDDF,
 		bg-alt:				#EEC9C8,
 		fg:				#ffffff,
@@ -47,22 +47,43 @@
 		accent5:			#B9C6CA, //grey
 		//accent6:
 		
-		// #eed0ce pale pink
-		// #ffbbb8 pink
-		// #ff928e dark pink
-		// #f36864 red pink
-		// #ffffff white
-		// #bb3530 red
-		
 		//pale pink #F6DDDF
 		//darker pale pink #EEC9C8
 		//dark pink #DF9C9D
 		//dark grey #687A80
 		//grey #B9C6CA
 		
-		//vert d'eau #beffe3
-		//vert #42e8d6
-		//bleu ciel #81e7f
+	*/
+		
+
+		// #eed0ce pale pink
+		// #ffbbb8 pink
+		// #ff928e dark pink
+		// #f36864 red pink
+		// #ffffff white
+		// #bb3530 red
+
+	 $palette: (
+		bg:				#BEFFE3,
+		bg-alt:				#42E8D6,
+		fg:				#ffffff,
+		fg-bold:			#81E7FF,
+		fg-light:			#BEFFE3,
+		border:				#81E7FF,
+		border-bg:			#6AABE8,
+		highlight:			#AEC0FF,
+		
+		
+		accent1:			#BEFFE3, //vert d'eau
+		accent2:			#42E8D6, //vert
+		accent3:			#81E7FF, //dark grey
+		accent4:			#6AABE8, //dark pink
+		accent5:			#AEC0FF, //grey
+		//accent6:
+		
+		//vert d'eau #BEFFE3
+		//vert #42E8D6
+		//bleu ciel #81E7FF
 		//bleu #6AABE8
 		//violette #AEC0FF
 		
