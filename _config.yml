@@ -5,7 +5,7 @@ type: Organization
 subtitle: Records
 email: nacarat.co@gmail.com
 description: Blanc Nacarat Records<br> Label & Collectif artistique
-baseurl:  https://blancnacarat.github.io
+//baseurl:  https://blancnacarat.github.io
 url: https://blancnacarat.github.io
 author: Blanc Nacarat
 lang: fr_FR
