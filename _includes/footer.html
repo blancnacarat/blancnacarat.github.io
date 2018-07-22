@@ -148,4 +148,7 @@
 			return false;
 		});
 	});
+	$(window).on('beforeunload', function(){
+  		$(window).scrollTop(0);
+	});									   
 	</script>
