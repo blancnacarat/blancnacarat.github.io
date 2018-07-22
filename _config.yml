@@ -5,8 +5,8 @@ type: Organization
 subtitle: Records
 email: nacarat.co@gmail.com
 description: Blanc Nacarat Records<br> Label & Collectif artistique
-# baseurl:  # the subpath of your site, e.g. /blog
-# url: # the base hostname & protocol for your site
+baseurl:  https://blancnacarat.github.io
+url: https://blancnacarat.github.io
 author: Blanc Nacarat
 lang: fr_FR
 street_address: 
