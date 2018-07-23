@@ -1,6 +1,7 @@
 ---
 title: Merci
 layout: thanks
-description: 'Test'
+description: 'merci'
 nav-menu: false
+sitemap: true
 ---

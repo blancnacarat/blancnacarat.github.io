@@ -15,9 +15,10 @@ zip_code:
 country: France
 phone: 
 
+safe: true
 # homepage tiles
-tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 0
+# tiles-source: posts # accepts "posts" or "pages"
+# tiles-count: 0
 
 # social settings
 500px_url:
@@ -38,5 +39,13 @@ sass:
   style: compressed
 
 plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
   - jekyll-seo-tag
   - jekyll-sitemap
