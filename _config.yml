@@ -41,10 +41,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-gems:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
 whitelist:
   - jekyll-seo-tag
   - jekyll-sitemap
