@@ -15,7 +15,6 @@ zip_code:
 country: France
 phone: 
 
-safe: true
 # homepage tiles
 # tiles-source: posts # accepts "posts" or "pages"
 # tiles-count: 0
