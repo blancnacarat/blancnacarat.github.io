@@ -4,10 +4,10 @@
     <section id="banner" class="major" style="height:100vh; max-height:none;">
         <div class="inner">
             <header class="major">
-                <h1>{{ page.landing-title }}</h1>
+                <h1>{{ site.title }}</h1>
             </header>
             <div class="content">
-                <blockquote style="text-transform: uppercase;"><b>{{ page.description }}</b></blockquote>
+                <blockquote style="text-transform: uppercase;"><b>{{ site.description }}</b></blockquote>
                 
 		<!--
 		<ul class="actions">
@@ -20,6 +20,12 @@
 		    
 		</div>
 		<ul class="actions" style="margin-top: 3em;">    
+			<ul class="languages">
+			{% for lang in site.data.languages %}
+			{% assign language = lang[1] %}
+			<li><a href="{{site.baseurl}}{{lang[0]}}" class="button special">{{language.icon}} {{ language.label }} ({{ language.code }})</a></li>
+			{% endfor %}
+			</ul>
 			<li>
 				<a href="#main" class="button special js-scrollTo">{{ site.data.translations['discover'][page.lang] }}:</a>
 			</li>
@@ -27,9 +33,4 @@
         </div>
     </section>
 
-<ul class="languages">
-{% for lang in site.data.languages %}
-{% assign language = lang[1] %}
-<li><a href="{{site.baseurl}}{{lang[0]}}">{{language.icon}} {{ language.label }} ({{ language.code }})</a></li>
-{% endfor %}
-</ul>
+
