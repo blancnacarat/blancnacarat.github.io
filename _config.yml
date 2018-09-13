@@ -34,6 +34,8 @@ twitter_url: https://twitter.com/blancnacarat
 # build settings
 markdown: kramdown
 
+languages : ["fr","en"]
+
 sass:
   style: compressed
 
