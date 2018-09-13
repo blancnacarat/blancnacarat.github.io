@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: index
 title: Home
 landing-title: 'Blanc Nacarat.'
 description: 'Blanc Nacarat Records Label & Collectif artistique'
