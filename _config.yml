@@ -4,7 +4,7 @@ name: Blanc nacarat
 type: Organization
 subtitle: Records
 email: nacarat.co@gmail.com
-description: Blanc Nacarat Records<br> Label & Collectif artistique
+description: Blanc Nacarat Records Label
 url: https://blancnacarat.github.io
 author: Blanc Nacarat
 street_address: 
@@ -33,13 +33,8 @@ twitter_url: https://twitter.com/blancnacarat
 # build settings
 markdown: kramdown
 
-languages : ["fr","en"]
-
 sass:
   style: compressed
-
-gems:
-  - jekyll-multiple-languages-plugin
 
 plugins:
   - jekyll-seo-tag

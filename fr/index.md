@@ -3,6 +3,8 @@ layout: index
 title: Home
 landing-title: 'Blanc Nacarat.'
 description: 'Blanc Nacarat Records Label & Collectif artistique'
+lang: fr
+lang-ref: index
 image: null
 author: null
 sitemap: true
