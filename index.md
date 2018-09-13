@@ -1,6 +1,6 @@
 ---
-layout: index
-title: Home
+layout: landing
+title: Landing
 sitemap: true
 ---
 
