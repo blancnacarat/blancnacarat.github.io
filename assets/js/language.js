@@ -4,7 +4,7 @@ $.ajax({
     success: function(headers) {
         language = headers['Accept-Language'];
         //nowDoSomethingWithIt(language);
-        if (language = 'fr'){
+        if (language = 'fr' || language = 'fr-be' || language = 'fr-ca' || language = 'fr-fr' || language = 'fr-lu' || language = 'fr-mc' || language = 'fr-ch'){
         	console.log("test");
         	console.log(language);
         	setTimeout(function() {
