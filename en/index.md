@@ -15,7 +15,6 @@ sitemap: true
         <header class="major">
             <h2>Who are we ?</h2>
         </header>
-                <!-- <p>{{ content }}</p> -->
 		<blockquote><b> We are a young and independant label for musicians, film-makers, writers, photographers and designers.
 		<br>
 		<p class="logo" style="padding-left: 0em;padding-right: 0em;margin-bottom: 0px;"><strong> Blanc Nacarat&nbsp;</strong></p>se veut une structure polyvalente accueillant non seulement des musiciens dans le champ de la musique électronique mais également des artistes travaillant sur d’autres supports afin de proposer une offre culturelle jeune et variée tout en croisant plusieurs disciplines artistiques. 
