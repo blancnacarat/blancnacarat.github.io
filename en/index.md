@@ -17,7 +17,7 @@ sitemap: true
         </header>
 		<blockquote><b> We are a young and independant label for musicians, film-makers, writers, photographers and designers.
 		<br>
-		<p class="logo" style="padding-left: 0em;padding-right: 0em;margin-bottom: 0px;"><strong> Blanc Nacarat&nbsp;</strong></p>se veut une structure polyvalente accueillant non seulement des musiciens dans le champ de la musique électronique mais également des artistes travaillant sur d’autres supports afin de proposer une offre culturelle jeune et variée tout en croisant plusieurs disciplines artistiques. 
+		<p class="logo" style="padding-left: 0em; padding-right: 0em; margin-bottom: 0px;"><strong> Blanc Nacarat&nbsp;</strong></p>se veut une structure polyvalente accueillant non seulement des musiciens dans le champ de la musique électronique mais également des artistes travaillant sur d’autres supports afin de proposer une offre culturelle jeune et variée tout en croisant plusieurs disciplines artistiques. 
 		</b></blockquote>
 		<blockquote>
 			<b> Notre objectif ?
@@ -27,12 +27,12 @@ sitemap: true
 		</blockquote>
 		<blockquote>
 			<b style ="display: flex;">
-				<p style="margin-bottom: 0px;text-align:center;"> Noëmie - Antoine - Paul </p>
+				<p style="margin-bottom: 0px; text-align: center;"> Noëmie - Antoine - Paul </p>
 			</b>
 		</blockquote>
 			<ul class="actions">
                    		<li>
-                   			<a href="#contact" class="button special js-scrollTo">Contact</a>
+                   			<a href="https://blancnacarat.github.io" class="button special">Contact</a>
                    		</li>
 			</ul>
     </div>
