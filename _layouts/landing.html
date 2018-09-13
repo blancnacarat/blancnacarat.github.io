@@ -9,7 +9,7 @@
 {% include head.html %}
 
 <style type="text/css">
-		.text-focus-in {
+		.text-focuus-in {
 	-webkit-animation: text-focus-in 2.1s ease-out 0.5s both;
 	        animation: text-focus-in 2.1s ease-out 0.5s both;
 						}
@@ -24,7 +24,7 @@
  * animation text-focus-in
  * ----------------------------------------
  */
-@-webkit-keyframes text-focus-in {
+@-webkit-keyframes text-focuus-in {
   0% {
     -webkit-filter: blur(12px);
             filter: blur(12px);
@@ -36,7 +36,7 @@
     opacity: 1;
   }
 }
-@keyframes text-focus-in {
+@keyframes text-focuus-in {
   0% {
     -webkit-filter: blur(12px);
             filter: blur(12px);
@@ -54,7 +54,19 @@
 <body>
 {% include header.html %}
 
-    <!-- Banner -->
+<section id="landing" class="major" style="height:100%; max-height:none;">
+        <div class="inner">
+            <header class="major">
+                <h1 class="text-focuus-in">Blanc Nacarat.</h1>
+            </header>
+            <div class="content">
+                <blockquote style="text-transform: uppercase;" class="text-focuus-in"><b>Records label</b></blockquote>
+			</div>
+
+        </div>
+    </section>
+
+    <!-- Banner 
     <section id="landing" class="major" style="height:100%; max-height:none;">
         <div class="inner">
             <header class="major">
@@ -62,7 +74,8 @@
             </header>
             <div class="content">
                 <blockquote style="text-transform: uppercase;" class="text-focus-in"><b>Records label</b></blockquote>
-                
+        
+        -->        
 		<!--
 		<ul class="actions">
                     
@@ -70,10 +83,9 @@
                 
 		</ul>
 		-->
-		    
+		<!--    
 		    
 			</div>
-		<!--
 		<ul class="actions" style="margin-top: 3em;">    
 			<ul class="languages">
 			{% for lang in site.data.languages %}
@@ -86,10 +98,11 @@
 			</li>
 		</ul>
 		-->
-
+	
+	<!--
         </div>
     </section>
-
+	-->
 </body>
 
 </html>
