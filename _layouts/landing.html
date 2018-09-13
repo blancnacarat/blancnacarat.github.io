@@ -59,12 +59,17 @@ setTimeout(function() {
 <body>
 	<style type="text/css">
 		body {
-		opacity: 0.6;
    		background-image: url("../assets/images/banner.png");
    		background-repeat: no-repeat;
    		background-size: cover;
-   		background-color: rgba(0,0,0,0.6);
    	}
+   		#landing:before {
+   			opacity: 0.6
+   			-ms-background-size: cover;
+   			-o-background-size: cover;
+   			-moz-background-size: cover;
+    		-webkit-background-size: cover;
+   		}
 	</style>
     <!-- Banner -->
     <section id="landing" class="major" style="height:100%; max-height:none;">
