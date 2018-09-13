@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Blanc Nacarat"]
   spec.email         = ["nacarat.co@gmail.com"]
 
-  spec.summary       = %q{BLANC NACARAT RECORDS: LABEL & COLLECTIF ARTISTIQUE}
+  spec.summary       = %q{BLANC NACARAT RECORDS LABEL}
   spec.homepage      = "https://blancnacarat.github.io"
   spec.license       = "MIT"
 

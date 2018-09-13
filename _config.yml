@@ -38,6 +38,9 @@ languages : ["fr","en"]
 sass:
   style: compressed
 
+gems:
+  - jekyll-multiple-languages-plugin
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
