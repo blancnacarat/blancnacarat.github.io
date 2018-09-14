@@ -5,6 +5,9 @@ $.ajax({
     	console.log("success");
         language = headers['Accept-Language'];
         console.log(language);
+        if (language.indexOf(',') !== -1) {
+        	language = language.split(',')[0];
+        }
         if (language.indexOf('-') !== -1){
     		language = language.split('-')[0];
         }
@@ -30,7 +33,9 @@ $.ajax({
     	language = window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage ;
         console.log("error");
         console.log(language);
-        console.log(language);
+        if (language.indexOf(',') !== -1) {
+        	language = language.split(',')[0];
+        }
         if (language.indexOf('-') !== -1){
     		language = language.split('-')[0];
         }
