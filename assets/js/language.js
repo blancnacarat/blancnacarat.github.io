@@ -2,6 +2,7 @@ $.ajax({
     url: "https://grounded-will-216322.appspot.com", 
     dataType: 'jsonp', 
     success: function(headers) {
+    	console.log("success");
         language = headers['Accept-Language'];
         console.log(language);
         //nowDoSomethingWithIt(language);
@@ -18,5 +19,22 @@ $.ajax({
   			window.location.href = "https://blancnacarat.github.io/en/";
 			}, 3500);
         }
+    }, error: function() {
+    	language = window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage ;
+        console.log("error");
+        console.log(language);
+        //nowDoSomethingWithIt(language);
+        if (language == 'fr' || language == 'fr-be' || language == 'fr-ca' || language == 'fr-fr' || language == 'fr-lu' || language == 'fr-mc' || language == 'fr-ch'){
+        	console.log("test");
+        	console.log(language);
+        	setTimeout(function() {
+  			window.location.href = "https://blancnacarat.github.io/fr/";
+			}, 3500);
+        } else{
+        	console.log("test else");
+        	console.log(language);
+        	setTimeout(function() {
+  			window.location.href = "https://blancnacarat.github.io/en/";
+			}, 3500);
     }
 });
