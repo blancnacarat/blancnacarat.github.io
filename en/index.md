@@ -33,7 +33,7 @@ sitemap: true
 		</blockquote>
 			<ul class="actions">
                    		<li>
-                   			<a href="https://blancnacarat.github.io/{{ page.lang }}/contact/" class="button special">Contact</a>
+                   			<a href="https://blancnacarat.github.io/{{ page.lang }}/contact" class="button special">Contact</a>
                    		</li>
 			</ul>
     </div>

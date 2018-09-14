@@ -16,7 +16,7 @@ sitemap: true
 			<form action="https://formspree.io/{{ site.email }}" method="POST">
 				<input type="hidden" name="_language" value="{{ page.lang }}" />
 				<input type="hidden" name="_format" value="plain" />
-				<input type="hidden" name="_next" value="https://blancnacarat.github.io/en/thanks>
+				<input type="hidden" name="_next" value="https://blancnacarat.github.io/en/thanks">
 				<div class="field half first">
 					<label for="name">Name*</label>
 					<input type="text" name="name" required id="name" placeholder="ex: Queen B" />
