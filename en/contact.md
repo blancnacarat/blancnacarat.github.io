@@ -1,5 +1,12 @@
 ---
-ff
+layout: contact
+title: Contact
+description: 'Blanc Nacarat Records Label & Artistic Community'
+lang: en
+lang-ref: contact
+image: null
+author: null
+sitemap: true
 ---
 
 <section id="contact">
