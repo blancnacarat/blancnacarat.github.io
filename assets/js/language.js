@@ -21,13 +21,13 @@ $.ajax({
         	console.log(language);
         	setTimeout(function() {
   			window.location.href = "https://blancnacarat.github.io/fr/";
-			}, 3000);
+			}, 2200);
         } else{
         	console.log("test else");
         	console.log(language);
         	setTimeout(function() {
   			window.location.href = "https://blancnacarat.github.io/en/";
-			}, 3000);
+			}, 2200);
         }
     }, error: function() {
     	language = window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage ;
@@ -49,13 +49,13 @@ $.ajax({
         	console.log(language);
         	setTimeout(function() {
   			window.location.href = "https://blancnacarat.github.io/fr/";
-			}, 3000);
+			}, 2200);
         } else{
         	console.log("test else");
         	console.log(language);
         	setTimeout(function() {
   			window.location.href = "https://blancnacarat.github.io/en/";
-			}, 3000);
+			}, 2200);
     }
    	}
 });
