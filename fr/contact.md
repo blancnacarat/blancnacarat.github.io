@@ -15,10 +15,10 @@ sitemap: true
 			<form action="https://formspree.io/{{ site.email }}" method="POST">
 				<input type="hidden" name="_language" value="{{ page.lang }}" />
 				<input type="hidden" name="_format" value="plain" />
-				<input type="hidden" name="_next" value="https://blancnacarat.github.io/en/thanks>
+				<input type="hidden" name="_next" value="https://blancnacarat.github.io/{{ page.lang }}/merci/>
 				<div class="field half first">
-					<label for="name">Name*</label>
-					<input type="text" name="name" required id="name" placeholder="ex: Queen B" />
+					<label for="name">Nom*</label>
+					<input type="text" name="name" required id="name" placeholder="ex: Jean-Pierre" />
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
@@ -26,12 +26,12 @@ sitemap: true
 				</div>
 				<div class="field">
 					<label for="message">Message*</label>
-					<textarea name="message" id="message" style="resize:vertical" vertical" rows="6" required placeholder="ex: Hi ! I love what you're doing... Hey, I'm an artist, check out my work... Hello, Can we meet..."></textarea>
+					<textarea name="message" id="message" style="resize:vertical" vertical" rows="6" required placeholder="ex: Salut ! J'adore ce que vous faites... Hey, je suis artiste: ma plaquette... Bonjour, est-ce qu'on peut se rencontrer..."></textarea>
 				</div>
 				<section class="actions">
-					<li><input type="submit" value="Send" class="special"/></li>
+					<li><input type="submit" value="Envoyer" class="special"/></li>
 					<br>
-					<li><input type="reset" value="Cancel" /></li>
+					<li><input type="reset" value="Annuler" /></li>
 				</section>
 			</form>
 		</section>

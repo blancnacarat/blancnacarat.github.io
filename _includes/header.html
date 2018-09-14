@@ -21,26 +21,22 @@
 <!-- Menu -->
 	
 
-<!-- <nav id="menu">
+<nav id="menu">
 	<ul class="links">
         {% for page in site.pages %}
-		    {% if page.layout == "home" %}
-		        <li><a href="{{ "" | absolute_url }}/">{{ page.title }}</a></li>
+		    {% if page.layout == "index" %}
+		        <li><a href="{{ "" | absolute_url }}/{{ page.lang }}">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
 		{% for page in site.pages %}
-		    {% if page.layout != "home" and page.nav-menu == true %}
+		    {% if page.layout != "index" and page.nav-menu == true %}
 		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 		    {% endif %}
 		{% endfor %}
 	</ul>
 	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Visiter</a></li>
+		<li><a href="#" class="button special fit">{{ site.data.translations['visit'][page.lang] }}</a></li>
 		<li><a href="#" class="button fit">Log In</a></li>
 	
 	</ul>
 </nav>
-
- -->
-
-
