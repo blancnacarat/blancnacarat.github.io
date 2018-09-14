@@ -27,7 +27,7 @@ sitemap: true
 			</b>
 		</blockquote>
 		<blockquote>
-				<p style="margin-bottom: 0px; text-align: center; display: flex;"> Noëmie - Antoine - Paul</p>
+				<p style="margin-bottom: 0px; text-align: center; display: flex;"><b>Noëmie - Antoine - Paul</b></p>
 		</blockquote>
 			<ul class="actions">
                    		<li>
