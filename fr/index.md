@@ -33,7 +33,7 @@ sitemap: true
 		</blockquote>
 			<ul class="actions">
                    		<li>
-                   			<a href="#contact" class="button special js-scrollTo">Contact</a>
+                   			<a href="{{site.url}}/fr/contact" class="button special">Contact</a>
                    		</li>
 			</ul>
     </div>
