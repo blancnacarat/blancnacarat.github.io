@@ -1,9 +1,10 @@
 ---
 layout: contact
 title: Contact
-description: 'Blanc Nacarat Records Label & Artistic Community'
-lang: en
-lang-ref: 
+landing-title: 'Blanc Nacarat.'
+description: 'Blanc Nacarat Records Label & Collectif artistique'
+lang: fr
+lang-ref: contact
 nav-menu: true
 image: null
 author: null
