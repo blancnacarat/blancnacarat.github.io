@@ -106,6 +106,8 @@
 					</span>
 				</div>
 			<ul class="icons">
+				{% if site.soundcloud_url %}
+				<li><a href="{{ site.soundcloud_url }}" class="icon alt fa-souncloud" target="_blank"><span class="label">Soundcloud</span></a></li>
 				{% if site.twitter_url %}
 				<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 				{% endif %}
