@@ -5,6 +5,7 @@ landing-title: 'Blanc Nacarat.'
 description: 'Blanc Nacarat Records Label & Collectif artistique'
 lang: fr
 lang-ref: index
+nav-menu: true
 image: null
 author: null
 sitemap: true

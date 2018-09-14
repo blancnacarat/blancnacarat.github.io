@@ -4,6 +4,7 @@ title: Contact
 description: 'Blanc Nacarat Records Label & Artistic Community'
 lang: en
 lang-ref: contact
+nav-menu: true
 image: null
 author: null
 sitemap: true
