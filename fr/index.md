@@ -11,7 +11,6 @@ author: null
 sitemap: true
 ---
 
-
 <section id="two">
     <div class="inner">
         <header class="major">
