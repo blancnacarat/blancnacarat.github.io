@@ -27,7 +27,7 @@ sitemap: true
 				</div>
 				<div class="field">
 					<label for="message">Message*</label>
-					<textarea name="message" id="message" style="resize:vertical" vertical" rows="6" required placeholder="ex: Hi ! I love what you're doing... Hey, I'm an artist, check out my work... Hello, Can we meet..."></textarea>
+					<textarea name="message" id="message" style="resize:vertical" rows="6" required placeholder="ex: Hi ! I love what you're doing... Hey, I'm an artist, check out my work... Hello, Can we meet..."></textarea>
 				</div>
 				<section class="actions">
 					<li><input type="submit" value="Send" class="special"/></li>
