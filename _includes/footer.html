@@ -37,13 +37,13 @@
 					<span>{{ site.phone }}</span>
 				</div>
 			</section>
-			-->
+			--> 
+			<!--
 					<section class="split">
 			<section>
 				<div class="contact-method">
 					<span class="icon alt fa-envelope"></span>
 					<h3>Email</h3>
-					<!-- a href="#">{{ site.email }}</a -->
 					<a href="mailto:nacarat.co@gmail.com">{{ site.email }}</a>
 				</div>
 			</section>
@@ -75,10 +75,37 @@
 		</section>
 	</div>
 </section>
-
-<!-- Footer 
+-->
+<!-- Footer -->
 	<footer id="footer">
 		<div class="inner">
+		<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<!-- a href="#">{{ site.email }}</a -->
+					<a href="mailto:nacarat.co@gmail.com">{{ site.email }}</a>
+		</div>
+		<div class="contact-method">
+					<span class="icon alt fa-home"></span>
+					<h3>Home</h3>
+					<span>
+					{% if site.street_address %}
+					    {{ site.street_address }}<br />
+					{% endif %}
+					{% if site.city %}
+					    {{ site.city }},
+					{% endif %}
+					{% if site.state %}
+					    {{ site.state }} 
+					{% endif %}
+					{% if site.zip_code %}
+					    {{ site.zip_code }}<br />
+					{% endif %}
+					{% if site.country %}
+					    {{ site.country }}
+					{% endif %}
+					</span>
+				</div>
 			<ul class="icons">
 				{% if site.twitter_url %}
 				<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
@@ -117,6 +144,5 @@
 			</ul>
 		</div>
 	</footer>
-	-->
 
 </div>
