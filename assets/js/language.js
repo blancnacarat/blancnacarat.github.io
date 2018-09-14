@@ -52,4 +52,5 @@ $.ajax({
   			window.location.href = "https://blancnacarat.github.io/en/";
 			}, 3500);
     }
+   	}
 });
