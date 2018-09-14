@@ -5,6 +5,13 @@ $.ajax({
     	console.log("success");
         language = headers['Accept-Language'];
         console.log(language);
+        if (language.indexOf('-') !== -1){
+    		language = language.split('-')[0];
+        }
+		if (language.indexOf('_') !== -1){
+    		language = language.split('_')[0];
+		}
+		console.log(language);
         //nowDoSomethingWithIt(language);
         if (language == 'fr' || language == 'fr-be' || language == 'fr-ca' || language == 'fr-fr' || language == 'fr-lu' || language == 'fr-mc' || language == 'fr-ch'){
         	console.log("test");
@@ -23,6 +30,14 @@ $.ajax({
     	language = window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage ;
         console.log("error");
         console.log(language);
+        console.log(language);
+        if (language.indexOf('-') !== -1){
+    		language = language.split('-')[0];
+        }
+		if (language.indexOf('_') !== -1){
+    		language = language.split('_')[0];
+		}
+		console.log(language);
         //nowDoSomethingWithIt(language);
         if (language == 'fr' || language == 'fr-be' || language == 'fr-ca' || language == 'fr-fr' || language == 'fr-lu' || language == 'fr-mc' || language == 'fr-ch'){
         	console.log("test");
