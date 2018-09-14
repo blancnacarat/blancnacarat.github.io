@@ -17,7 +17,7 @@
 	
 </header>
 
-<!-- Menu -->
+<!-- Menu
 	
 
 <nav id="menu">
@@ -38,22 +38,31 @@
 		<li><a href="#" class="button fit">Log In</a></li>
 	</ul>
 </nav>
+-->
+
 
 <nav id="menu">
+	{% if page.lang == "en" %}
 	<ul class="links">
-        {% for page in site.pages %}
-		    {% if page.layout == "index" %}
-		        <li><a href="{{ "" | absolute_url }}/{{ page.lang }}">{{ page.title }}</a></li>
-	    	{% endif %}
-		{% endfor %}
-		{% for page in [page.lang] %}
-		    {% if page.layout != "index" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
-	</ul>
-	<ul class="actions vertical">
+        	<li><a href="{{ "" | absolute_url }}/{{ page.lang }}">Home</a></li>
+        	<li><a href="{{ site.url }}/en/contact">Contact</a></li>
+    </ul>
+    <ul class="actions vertical">
+    	<li><a href="{{ site.url }}/fr" class="button special fit">Voir le site en français</a></li>
 		<li><a href="#" class="button special fit">{{ site.data.translations['visit'][page.lang] }}</a></li>
 		<li><a href="#" class="button fit">Log In</a></li>
 	</ul>
+	{% endif %}
+	
+	{% if page.lang == "fr" %}
+	<ul class="links">
+        	<li><a href="{{ "" | absolute_url }}/{{ page.lang }}">Home</a></li>
+        	<li><a href="{{ site.url }}/fr/contact">Contact</a></li>
+    </ul>
+    <ul class="actions vertical">
+    	<li><a href="{{ site.url }}/en" class="button special fit">Switch to english</a></li>
+		<li><a href="#" class="button special fit">{{ site.data.translations['visit'][page.lang] }}</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+	{% endif %}
 </nav>
