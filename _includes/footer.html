@@ -3,9 +3,9 @@
 	<div class="inner">
 		<section>
 			<form action="https://formspree.io/{{ site.email }}" method="POST">
-				<input type="hidden" name="_language" value="fr" />
+				<input type="hidden" name="_language" value="{{ page.lang }}" />
 				<input type="hidden" name="_format" value="plain" />
-				<input type="hidden" name="_next" value="https://blancnacarat.github.io/{{ page.lang }}/thanks/>
+				<input type="hidden" name="_next" value="https://blancnacarat.github.io/{{ page.lang }}/{{ page.lang-ref }}/>
 				
 				<div class="field half first">
 					<label for="name">Nom*</label>
@@ -119,36 +119,3 @@
 	-->
 
 </div>
-
-<!-- Scripts -->
-
-	<script src="{{ "assets/js/lazysizes.min.js" | absolute_url async=""}}"></script>
-
-	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
-	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
-	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
-	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
-	
-	
-	<script src="{{ "assets/js/hoverontouch.js" | absolute_url }}"></script>
-	<script type="text/javascript">
-    		var HoverOnTouch = new HoverOnTouch();
-	</script>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>
-	$(document).ready(function() {
-		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
-			var page = $(this).attr('href'); // Page cible
-			var speed = 750; // Durée de l'animation (en ms)
-			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
-			return false;
-		});
-	});
-	$(window).on('beforeunload', function(){
-  		$(window).scrollTop(0);
-	});									   
-	</script>
