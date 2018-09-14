@@ -58,6 +58,19 @@ console.log("test");
 
 anime.timeline({loop: false})
 	.add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  	})
+  	.add({
+    targets: '.ml11 .line',
+    translateX: [0,$(".ml11 .letters").width()],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+	.add({
     targets: '.ml11 .letter',
     opacity: [0,1],
     easing: "easeOutExpo",
