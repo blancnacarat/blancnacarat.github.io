@@ -12,7 +12,6 @@ sitemap: true
 
 <section id="contact">
 	<div class="inner">
-		<section>
 			<form action="https://formspree.io/{{ site.email }}" method="POST">
 				<input type="hidden" name="_language" value="{{ page.lang }}" />
 				<input type="hidden" name="_format" value="plain" />
@@ -35,4 +34,5 @@ sitemap: true
 					<li><input type="reset" value="Cancel" /></li>
 				</section>
 			</form>
-		</section>
+	</div>
+</section>
