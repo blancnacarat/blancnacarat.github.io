@@ -318,7 +318,7 @@
         $('.sc-info', $player).each(function(index) {
           $('h3', this).html('<a href="' + track.permalink_url +'">' + track.title + '</a>');
           $('h4', this).html('by <a href="' + track.user.permalink_url +'">' + track.user.username + '</a>');
-          $('p', this).html(track.description || 'no Description');
+          // $('p', this).html(track.description || 'no Description');
         });
         // update the artwork
         $('.sc-artwork-list li', $player).each(function(index) {
