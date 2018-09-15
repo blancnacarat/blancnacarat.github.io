@@ -729,6 +729,14 @@
 })(jQuery);
 </script>
 
+
+<body>
+	{% include header.html %} 
+	<section role="main" class="main wrapper">
+    	<a href="https://soundcloud.com/noemiehre/sets/roche-musique" class="sc-player">Listen</a>
+  	</section>
+</body>
+
 <style type="text/css">
 	/* LAYOUT *
 -----------------------------------------------*/
@@ -861,7 +869,6 @@ h1 {
 
 /* SOUNDCLOUD PLAYER *
 -----------------------------------------------*/
-.soundcloud {
 .sc-player {
 	position: relative;
 	margin-bottom: 2em;
@@ -1222,14 +1229,5 @@ p {
 	padding: 2px 4px;
 	font-weight: bold;
 }
-
-}
-
 </style>
-<body>
-	{% include header.html %} 
-	<section role="main" class="main wrapper soundcloud">
-    	<a href="https://soundcloud.com/noemiehre/sets/roche-musique" class="sc-player">Listen</a>
-  	</section>
-</body>
 </html>
