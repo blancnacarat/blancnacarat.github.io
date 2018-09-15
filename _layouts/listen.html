@@ -163,6 +163,13 @@ iframe { display: none; }
 <body>
 
 	{% include header.html %} 
+	
+
+	<script>
+		$.each($('.player'), function {
+			setInfo();
+		});
+	</script>
 	<script src='//w.soundcloud.com/player/api.js'></script>
 	<div class="player">
   	<span class='info'></span>
