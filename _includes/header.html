@@ -3,48 +3,16 @@
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	
 	<a href="{{ site.url }}/{{ page.lang }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-	<!--
-	<a href="{{ "" | absolute_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-	-->
-
-
-
 	<nav>
 		<a href="#menu">Menu</a>
-	</nav>
-	
+	</nav>	
 </header>
-
-<!-- Menu
-	
-
-<nav id="menu">
-	<ul class="links">
-        {% for page in site.pages %}
-		    {% if page.layout == "index" %}
-		        <li><a href="{{ "" | absolute_url }}/{{ page.lang }}">{{ page.title }}</a></li>
-	    	{% endif %}
-		{% endfor %}
-		{% for page in site.pages %}
-		    {% if page.layout != "index" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-		    {% endif %}
-		{% endfor %}
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">{{ site.data.translations['visit'][page.lang] }}</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
-	</ul>
-</nav>
--->
-
 
 <nav id="menu">
 	{% if page.lang == "en" %}
 	<ul class="links">
-        	<li><a href="{{ "" | absolute_url }}/{{ page.lang }}">Home</a></li>
+        	<li><a href="{{ "" | absolute_url }}{{ page.lang }}">Home</a></li>
         	<li><a href="{{ site.url }}/en/contact">Contact</a></li>
     </ul>
     <ul class="actions vertical">
@@ -54,7 +22,7 @@
 	
 	{% if page.lang == "fr" %}
 	<ul class="links">
-        	<li><a href="{{ "" | absolute_url }}/{{ page.lang }}">Home</a></li>
+        	<li><a href="{{ "" | absolute_url }}{{ page.lang }}">Home</a></li>
         	<li><a href="{{ site.url }}/fr/contact">Contact</a></li>
     </ul>
     <ul class="actions vertical">
