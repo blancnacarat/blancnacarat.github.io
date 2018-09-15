@@ -29,6 +29,32 @@
 	);
 
 // Palette.
+	$palette: (
+		bg:					#FFF9F3,
+		bg-alt:				#FFF1E2,
+		fg:					#FF0F53,
+		fg-bold:			#FF0F53,
+		fg-light:			#FFF1E2,
+		border:				#FF0F53,
+		border-bg:			#B20A3A,
+		highlight:			#B20A3A,
+		
+		
+		accent1:			#FFF9F3, //cassé
+		accent2:			#FFF1E2, //beige
+		accent3:			#FF0F53, //red
+		accent4:			#B20A3A, //dark red
+		accent5:			#B20A3A, //dark red
+		
+		//cassé #FFF9F3
+		//beige #FFF1E2
+		//red #FF0F53
+		//dark red #B20A3A
+
+
+
+
+
 	/* $palette: (
 		bg:				#F6DDDF,
 		bg-alt:				#EEC9C8,
@@ -115,27 +141,6 @@
 		//pink #F479A3
 	
 	*/
-	$palette: (
-		bg:				#FFF9F3,
-		bg-alt:				#FFF1E2,
-		fg:				#FF0F53,
-		fg-bold:			#FF0F53,
-		fg-light:			#FFF1E2,
-		border:				#FF0F53,
-		border-bg:			#B20A3A,
-		highlight:			#B20A3A,
-		
-		
-		accent1:			#FFF9F3, //cassé
-		accent2:			#FFF1E2, //beige
-		accent3:			#FF0F53, //red
-		accent4:			#B20A3A, //dark red
-		accent5:			#B20A3A, //dark red
-		
-		//cassé #FFF9F3
-		//beige #FFF1E2
-		//red #FF0F53
-		//dark red #B20A3A
 		
 	/* $palette: (
 		bg:				#f2f2f0,
