@@ -22,7 +22,7 @@ sitemap: true
 		</b></blockquote>
 		<blockquote>
 			<b> Where are we heading ?
-			<br>Our goal is to bring visibility to young artists and make their entrance into the professional world easier. In the future, we hope to establish a collective allowing us to generate various events and bespoke projects while also providing support for solo projects of our clients.
+			<br>Our goal is to bring visibility to young artists and make their entrance into the professional world easier. In the future, we hope to establish a collective allowing us to generate various events and bespoke projects, while also providing support for solo projects of our clients.
 			<br>We would like to see </b><p class="logo" style="padding-left: 0em;padding-right: 0em;margin-bottom: 0px;"><strong> Blanc Nacarat&nbsp;</strong></p><b> grow into a true springboard and a family whose members could help each other, bond, connect, and share what they produce.
 			</b>
 		</blockquote>
