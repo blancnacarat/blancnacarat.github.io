@@ -37,6 +37,9 @@ markdown: kramdown
 gems:
   - jekyll-font-awesome-sass
 
+font-awesome:
+  assets: true
+
 sass:
   style: compressed
 
