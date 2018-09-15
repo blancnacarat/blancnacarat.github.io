@@ -1,21 +1,175 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+
+<script type="text/javascript">
+	$(document).ready(function(){
+  
+  var player = SC.Widget($('iframe.sc-widget')[0]);
+  var pOffset = $('.player').offset();
+  var pWidth = $('.player').width();
+  var scrub;
+  
+  player.bind(SC.Widget.Events.READY, function() {
+    setInfo();
+    player.play();
+  }); //Set info on load
+  
+  player.bind(SC.Widget.Events.PLAY_PROGRESS, function(e) {
+    if( e.relativePosition < 0.003 ) { setInfo(); }
+    //Event listener when track is playing
+    $('.position').css('width', ( e.relativePosition*100)+"%");
+  });
+  
+   $('.player').mousemove(function(e){ //Get position of mouse for scrubbing
+    scrub = (e.pageX-pOffset.left);
+  });
+  
+  $(document).on('keydown', function(e){
+    switch(e.keyCode){
+      case 32:
+        player.toggle(); 
+      break;
+      case 39:
+        player.next();
+      break;
+      case 37:
+        player.prev();
+      break;
+    }
+  });
+
+  $('.player').click(function(){ //Use the position to seek when clicked
+    $('.position').css('width',scrub+"px");
+    var seek = player.duration*(scrub/pWidth); 
+    
+    //Seeking to the start would be a previous?
+    if ( seek < player.duration * .05 ) {
+      player.prev();
+    } else if ( seek > player.duration * .99 ) {
+      player.next();
+    } else {      
+      player.seekTo(seek);
+    }
+    
+  });
+  
+   function setInfo() {
+    player.getCurrentSound(function(song) {
+      
+        // Soundcloud just borked this api endpoint, hence this hack :/
+        var waveformPng =
+            song.waveform_url
+                .replace('json', 'png')
+                .replace('wis', 'w1');
+        
+        var artworkUrl = song.artwork_url || '';
+        
+       console.log(song);
+      
+      $('.waveform').css('background-image', "url('" + waveformPng + "')");    
+      $('.player').css('background-image', "url('" + artworkUrl.replace('-large', '-t500x500') + "')");
+      
+      var info = song.title;
+      $('.info').html(info);
+      
+      player.current = song;
+    });
+    
+    player.getDuration(function(value){
+      player.duration = value;
+    });
+
+    player.isPaused(function(bool){
+      player.getPaused = bool;
+    });
+  }   
+  
+});
+</script>
+
+<style type="text/css">
+	body {
+  overflow: hidden;
+  background-color: #eee;
+}
+
+iframe { display: none; }
+
+.player {
+  cursor: pointer;
+  position: absolute;
+  top: 0; bottom: 0;
+  margin: auto;
+  height: 200px;
+  width: 100%;
+  
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #efefef;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s linear;
+}
+
+.waveform {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: 100% 100%;
+  transition: background-image 1s linear;
+}
+
+.position {
+  opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  
+  background-color: white;
+  transition: width .1s linear;
+  mix-blend-mode: overlay;
+}
+
+.info {
+  user-select: none;
+  z-index: 5;
+  position: absolute;
+  height: 1em;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 5em;
+  letter-spacing: -.08em;
+  
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  
+  color: white;
+  mix-blend-mode: difference;
+}
+</style>
+
+
+
 <body>
 
 	{% include header.html %} 
+	<script src='//w.soundcloud.com/player/api.js'></script>
+	<div class="player">
+  	<span class='info'></span>
+  	<div class="waveform"></div>
+  	<div class="position"></div>  
+	</div>
 
-
-	<section>
-		<div>
-			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/13041235&color=%23ff0f53&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273476837&color=%23ff0f53&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328238472&color=%23ff0f53&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-		</div>
-	</section>
-
+	<iframe class="sc-widget" src="//w.soundcloud.com/player/?url=//soundcloud.com/kanyewest/i-love-it-kanye-west-lil-pump">
+    </iframe>
 
 
 	 {% include footer.html %}
