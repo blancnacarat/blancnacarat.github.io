@@ -33,6 +33,7 @@ twitter_url: https://twitter.com/blancnacarat
 
 # build settings
 markdown: kramdown
+include: ['.htaccess']
 
 gems:
   - jekyll-font-awesome-sass
