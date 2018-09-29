@@ -23,7 +23,7 @@ sitemap: true
 				</div>
 				<div class="field half">
 					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" placeholder="ex: adresse@gmail.com" />
+					<input type="text" name="_replyto" required id="email" placeholder="ex: adresse@gmail.com" />
 				</div>
 				<div class="field">
 					<label for="message">Message*</label>
