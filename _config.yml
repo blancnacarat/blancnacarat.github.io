@@ -20,16 +20,17 @@ phone:
 
 # social settings
 soundcloud_url: https://soundcloud.com/blanc-nacarat/
-500px_url:
 facebook_url: https://www.facebook.com/blanc.nacarat/
+twitter_url: https://twitter.com/blancnacarat
+instagram_url: https://www.instagram.com/blanc.nacarat/
+
 github_url:
 gitlab_url: 
 googleplus_url: 
-instagram_url: https://www.instagram.com/blanc.nacarat/
 linkedin_url: 
 pinterest_url:
 slack_url:
-twitter_url: https://twitter.com/blancnacarat
+500px_url:
 
 # build settings
 markdown: kramdown
