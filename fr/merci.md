@@ -1,5 +1,5 @@
 ---
-title: Merci !
+title: Merci ! Blanc Nacarat.
 layout: thanks
 lang: fr
 lang-ref: thanks

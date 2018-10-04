@@ -1,6 +1,6 @@
 ---
 layout: contact
-title: Contact
+title: Contact - Blanc Nacarat.
 description: 'Blanc Nacarat Records Label & Artistic Community'
 lang: en
 lang-ref: contact

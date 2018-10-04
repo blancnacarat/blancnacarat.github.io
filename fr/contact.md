@@ -1,6 +1,6 @@
 ---
 layout: contact
-title: Contact
+title: Contact - Blanc Nacarat.
 landing-title: 'Blanc Nacarat.'
 description: 'Blanc Nacarat Records Label & Collectif artistique'
 lang: fr

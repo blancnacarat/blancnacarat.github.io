@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: Landing
+title: Blanc Nacarat.
 lang: en
 lang-ref: index
 sitemap: true

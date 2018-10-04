@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Home
+title: Blanc Nacarat.
 landing-title: 'Blanc Nacarat.'
 description: 'Blanc Nacarat Records <br> Label & Artistic Community'
 lang: en
