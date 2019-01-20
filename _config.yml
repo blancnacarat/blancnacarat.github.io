@@ -7,12 +7,12 @@ email: nacarat.co@gmail.com
 description: Blanc Nacarat Records Label
 url: https://blancnacarat.github.io
 author: Blanc Nacarat
-street_address: 
-city: 
-state: 
-zip_code:  
+street_address:
+city:
+state:
+zip_code:
 country: France
-phone: 
+phone:
 
 # homepage tiles
 # tiles-source: posts # accepts "posts" or "pages"
@@ -25,9 +25,9 @@ twitter_url: https://twitter.com/blancnacarat
 instagram_url: https://www.instagram.com/blanc.nacarat/
 
 github_url:
-gitlab_url: 
-googleplus_url: 
-linkedin_url: 
+gitlab_url:
+googleplus_url:
+linkedin_url:
 pinterest_url:
 slack_url:
 500px_url:
