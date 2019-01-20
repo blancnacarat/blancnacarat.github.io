@@ -50,7 +50,7 @@
 	 * @return {jQuery} jQuery object.
 	 */
 
-	/* 
+	/*
 	$.fn.panel = function(userConfig) {
 
 		// No elements?
@@ -313,7 +313,7 @@
 	 * @return {jQuery} jQuery object.
 	 */
 
-	/* 
+	/*
 	$.fn.placeholder = function() {
 
 		// Browser natively supports placeholders? Bail.
@@ -538,7 +538,7 @@
 	 * @param {bool} condition If true, moves elements to the top. Otherwise, moves elements back to their original locations.
 	 */
 
-	/* 
+	/*
 	$.prioritize = function($elements, condition) {
 
 		var key = '__prioritize';

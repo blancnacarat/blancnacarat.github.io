@@ -4,31 +4,26 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-  
   var player = SC.Widget($('iframe.sc-widget')[0]);
   var pOffset = $('.player').offset();
   var pWidth = $('.player').width();
   var scrub;
-  
   player.bind(SC.Widget.Events.READY, function() {
     setInfo();
     player.play();
   }); //Set info on load
-  
   player.bind(SC.Widget.Events.PLAY_PROGRESS, function(e) {
     if( e.relativePosition < 0.003 ) { setInfo(); }
     //Event listener when track is playing
     $('.position').css('width', ( e.relativePosition*100)+"%");
   });
-  
    $('.player').mousemove(function(e){ //Get position of mouse for scrubbing
     scrub = (e.pageX-pOffset.left);
   });
-  
   $(document).on('keydown', function(e){
     switch(e.keyCode){
       case 32:
-        player.toggle(); 
+        player.toggle();
       break;
       case 39:
         player.next();
@@ -41,41 +36,38 @@
 
   $('.player').click(function(){ //Use the position to seek when clicked
     $('.position').css('width',scrub+"px");
-    var seek = player.duration*(scrub/pWidth); 
-    
+    var seek = player.duration*(scrub/pWidth);
     //Seeking to the start would be a previous?
     if ( seek < player.duration * .05 ) {
       player.prev();
     } else if ( seek > player.duration * .99 ) {
       player.next();
-    } else {      
+    } else {
       player.seekTo(seek);
     }
-    
   });
-  
    function setInfo() {
     player.getCurrentSound(function(song) {
-      
+
         // Soundcloud just borked this api endpoint, hence this hack :/
         var waveformPng =
             song.waveform_url
                 .replace('json', 'png')
                 .replace('wis', 'w1');
-        
+
         var artworkUrl = song.artwork_url || '';
-        
+
        console.log(song);
-      
-      $('.waveform').css('background-image', "url('" + waveformPng + "')");    
+
+      $('.waveform').css('background-image', "url('" + waveformPng + "')");
       $('.player').css('background-image', "url('" + artworkUrl.replace('-large', '-t500x500') + "')");
-      
+
       var info = song.title;
       $('.info').html(info);
-      
+
       player.current = song;
     });
-    
+
     player.getDuration(function(value){
       player.duration = value;
     });
@@ -83,8 +75,8 @@
     player.isPaused(function(bool){
       player.getPaused = bool;
     });
-  }   
-  
+  }
+
 });
 </script>
 
@@ -105,7 +97,7 @@ iframe { display: none; }
   margin: auto;
   height: 180px;
   width: 70%;
-  
+
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   background-color: #FFF9F3;
   background-size: cover;
@@ -129,7 +121,7 @@ iframe { display: none; }
   position: absolute;
   height: 100%;
   width: 0;
-  
+
   background-color: #FFF9F3;
   transition: width .1s linear;
   mix-blend-mode: overlay;
@@ -146,13 +138,13 @@ iframe { display: none; }
   margin: auto;
   font-size: 5em;
   letter-spacing: -.08em;
-  
+
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
-  
+
   color: white;
   mix-blend-mode: difference;
 }
@@ -162,8 +154,8 @@ iframe { display: none; }
 
 <body>
 
-	{% include header.html %} 
-	
+	{% include header.html %}
+
 
 	<script>
 		$.each($('.player'), function {
@@ -174,7 +166,7 @@ iframe { display: none; }
 	<div class="player">
   	<span class='info'></span>
   	<div class="waveform"></div>
-  	<div class="position"></div>  
+  	<div class="position"></div>
 	</div>
 
 	<iframe class="sc-widget" src="//w.soundcloud.com/player/?url=//soundcloud.com/kanyewest/i-love-it-kanye-west-lil-pump">
@@ -184,7 +176,7 @@ iframe { display: none; }
 	<div class="player">
   	<span class='info'></span>
   	<div class="waveform"></div>
-  	<div class="position"></div>  
+  	<div class="position"></div>
 	</div>
 
 	<iframe class="sc-widget" src="//w.soundcloud.com/player/?url=//soundcloud.com/rone-music/mirapolis-laurent-garnier-remix">

@@ -4,7 +4,7 @@
 //  An alternative hover function on mobile devices.
 //  Version 3.0 02/06/17
 //
-//  Created by Vinzenz Aubry on 19/04/16. 
+//  Created by Vinzenz Aubry on 19/04/16.
 //  Copyright 2017 Vinzenz Aubry. All rights reserved.
 //  MIT Licensed
 //
@@ -41,11 +41,11 @@ HoverOnTouch.prototype.addCss = function () {
      for (var i = 0; i < this.all_objects.length; i++) {
         var object = this.all_objects[i];
         //adding css for iphone ui elements. Only applies to hover on touch elements: iphone tap highlight / Iphone magnifiing glass / Menu on link longpress
-        object.style.cssText = "-webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none; -webkit-touch-callout: none; "; 
+        object.style.cssText = "-webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none; -webkit-touch-callout: none; ";
         //removing pointerevents on images for android
         var imagesArray = object.getElementsByTagName('img');
         for (var k = 0; k < imagesArray.length; k++) {
-            imagesArray[k].style.cssText = "pointer-events: none;"; 
+            imagesArray[k].style.cssText = "pointer-events: none;";
         }
      }
 
@@ -64,7 +64,7 @@ HoverOnTouch.prototype.rewriteLinks = function () {
                 object.removeAttribute("href");
 
             };
-        }   
+        }
     }
 };
 
@@ -140,7 +140,6 @@ HoverOnTouch.prototype.touchstartHoverontouch = function (e) {
     if (this.multipleTouchAmount > 1) {
         this.multiTouchGesture = true;
     }
-    
     //go up dom and add class
     var object = this.getClosest(e.target, '.hoverontouch');
     //restart gifs
@@ -154,15 +153,15 @@ HoverOnTouch.prototype.touchstartHoverontouch = function (e) {
 
     var self = this;
     //console.log("timer runs");
-    this.pressTimer = window.setTimeout(function() { 
+    this.pressTimer = window.setTimeout(function() {
         //console.log("timer end, longpress detected");
-        self.longpress = true;             
+        self.longpress = true;
     },250);
 
     //can't prevent default click, as it would break scrolling. Passive eventlisteners are not fully working yet
     // e.stopPropagation();
     // e.preventDefault();
-};  
+};
 
 
 HoverOnTouch.prototype.touchendHoverontouch = function (e) {
@@ -188,7 +187,6 @@ HoverOnTouch.prototype.touchendHoverontouch = function (e) {
             var location = object.getAttribute('data-link');
             window.location.href=location;
         };
-        
     } else {
         this.longpress = false;
     };
@@ -275,7 +273,7 @@ HoverOnTouch.prototype.getClosest = function (elem, selector) {
             if ( elem.id === selector.substr(1) ) {
                 return elem;
             }
-        } 
+        }
 
         // If selector is a data attribute
         if ( firstChar === '[' ) {

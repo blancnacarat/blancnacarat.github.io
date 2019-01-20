@@ -1,6 +1,6 @@
-$.ajax({ 
-    url: "https://grounded-will-216322.appspot.com", 
-    dataType: 'jsonp', 
+$.ajax({
+    url: "https://grounded-will-216322.appspot.com",
+    dataType: 'jsonp',
     success: function(headers) {
     	console.log("success");
         language = headers['Accept-Language'];
