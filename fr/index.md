@@ -2,7 +2,7 @@
 layout: index
 title: Blanc Nacarat.
 landing-title: 'Blanc Nacarat.'
-description: 'Blanc Nacarat Records <br> Label & Collectif artistique'
+description: 'Blanc Nacarat Collectif <br> Label & Collectif artistique'
 lang: fr
 lang-ref: index
 nav-menu: true
