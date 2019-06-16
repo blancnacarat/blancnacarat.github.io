@@ -1,5 +1,5 @@
 ---
-layout: listen
+layout: listen2
 title: Listen
 description: 'Blanc Nacarat Records Label & Artistic Community'
 lang: en
