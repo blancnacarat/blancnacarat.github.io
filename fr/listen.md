@@ -1,8 +1,8 @@
 ---
 layout: listen2
 title: Listen
-description: 'Blanc Nacarat Records Label & Artistic Community'
-lang: en
+description: 'Blanc Nacarat Records Label & Collectif artistique'
+lang: fr
 lang-ref: listen
 nav-menu: true
 image: null
